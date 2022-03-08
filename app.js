@@ -1,0 +1,1 @@
+const faq = document.querySelector('h1')
