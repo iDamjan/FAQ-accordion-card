@@ -1,0 +1,64 @@
+html{ 
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    font-size:100%; 
+    margin : 0 ;
+    padding: 0; 
+    background: linear-gradient(90deg, hsl(273, 75%, 66%) 30%, hsl(240, 73%, 65%) 100%);
+    display: flex;
+    justify-content: center;
+   
+    height: 100vh;
+    align-items: center;
+
+
+}
+  
+
+
+.container {
+    background-color: white;
+    display:flex;
+    justify-content:space-around; 
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    width: 920px;
+    height: 500px;
+
+}
+.FAQ{ 
+    margin-left:20px;
+}
+
+.arrow{ 
+    width: 15px;
+    margin-left:10px;
+    height: 15px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom:20px;
+    display: inline-block;
+    border-bottom: 0.8px solid rgb(187, 187, 187);
+    margin-bottom:15px;
+}
+h1 {
+    font-size: 40px;
+    margin-top: 0px; 
+}
+
+.woman{ 
+    max-width: 100%;
+}
+
+.question{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
