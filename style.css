@@ -63,6 +63,7 @@ h3 {
     font-weight: 600;
     font-size: 16px;
     color: hsl(238, 29%, 16%);
+    transition: 0.4s;
     
 }
 h1 {
@@ -74,18 +75,23 @@ h1 {
 
 
 }
-.accordion_collapse {
+.accordion_collapseOne, 
+.accordion_collapseTwo,
+.accordion_collapseThree,
+.accordion_collapseFour,
+.accordion_collapseFive  {
     display:none;
 }
 
 .accordion_show{ 
     display:block;
     border-bottom: 0.1px solid rgba(128, 128, 128, 0.445);
-    
-    
+    margin-top: 0px;
+}
+.accordion_close { 
+    border-top: 1px solid red;
     
 }
-
 
 .box { 
     position: absolute;
@@ -95,7 +101,12 @@ h1 {
     z-index: 1;
 }
 
-.accordion_item{
+.accordion_itemOne,
+.accordion_itemTwo,
+.accordion_itemThree,
+.accordion_itemFour,
+.accordion_itemFive
+{
     display: flex;
     align-items: center;
     border-bottom: 0.1px solid rgba(128, 128, 128, 0.445);
@@ -113,4 +124,10 @@ h1 {
 
 h3:hover{ 
     color: hsl(14, 88%, 65%);
+    
+}
+p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    
 }
