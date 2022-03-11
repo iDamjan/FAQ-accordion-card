@@ -16,10 +16,13 @@ const accordionItemThree = document.querySelector('.accordion_itemThree');
 const accordionItemFour = document.querySelector('.accordion_itemFour');
 const accordionItemFive = document.querySelector('.accordion_itemFive');
 
+const sestra = accordionItemOne.nextElementSibling;
 
+console.log(sestra);
 
 accordionQuestionOne.addEventListener('click', (e) =>{
 
+    console.log(e);
     accordionAnswerOne.classList.toggle('accordion_show');
      
     if (accordionAnswerOne.offsetWidth > 0 && accordionAnswerOne.offsetHeight > 0 === true){

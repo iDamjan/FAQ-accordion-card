@@ -34,6 +34,7 @@ body {
     background-position: -50% center;
     background-size: 650px;
     position: relative;
+    box-shadow: 0px 17px 32px rgba(0, 0, 0, 0.329);
 
 }
 .accordion{ 
@@ -81,12 +82,18 @@ h1 {
 .accordion_collapseFour,
 .accordion_collapseFive  {
     display:none;
+    max-height: 20px;
+    overflow: hidden;
+    transition: max-height 1s;
+    
 }
 
 .accordion_show{ 
     display:block;
     border-bottom: 0.1px solid rgba(128, 128, 128, 0.445);
     margin-top: 0px;
+    max-height: 70px;
+    transition: max-height 1s;
 }
 .accordion_close { 
     border-top: 1px solid red;
@@ -120,6 +127,7 @@ h1 {
     justify-content: flex-end;
     padding-left:10px;
     width: 12px;
+    transition: 0.5s;
 }
 
 h3:hover{ 
@@ -129,5 +137,65 @@ h3:hover{
 p{
     margin-top: 0;
     margin-bottom: 10px;
+    transition: 1s;
     
+    
+}
+
+.mobile_woman{
+    display: none;
+}
+
+@media (max-width:62em){ 
+    .card{ 
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        max-width: 380px;
+    }
+    .box{
+        display: none;
+    }
+    .mobile_woman{
+        display: block;
+        max-width: 380px;
+        transform: translateY(-120px);
+    }
+    .woman{
+        display: none;
+    }
+    .accordion{
+        padding: 0px 50px;
+        width: 100%;
+        max-width: 350px;
+       
+    }
+    .accordion_itemOne,
+    .accordion_itemTwo,
+    .accordion_itemThree,
+    .accordion_itemFour,
+    .accordion_itemFive
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.445);
+    justify-content: space-between;
+    
+    
+}
+body{
+    padding: 30px 30px;
+}
+.accordion_item img{
+    justify-content: flex-end;
+    padding-left:20px;
+    width: 12px;
+    transition: 0.5s;
+
+
+}
 }
